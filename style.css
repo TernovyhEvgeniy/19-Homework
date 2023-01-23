@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1 {
+  margin: 0;
+}
+/* container */
+
+.container {
+  width: 1440px;
+  min-height: 100vh;
+  margin: 5px auto;
+  outline: 1px solid grey;
+  background-color: #edece8;
+}
+
+/* buttons */
+
+.buttons__title {
+  padding: 50px 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.button:nth-child(7),
+.button2:nth-child(7) {
+  color: #727481;
+}
+.button:nth-child(9),
+.button2:nth-child(9) {
+  color: #5390c7;
+}
+.button,
+.button2,
+.button3,
+.button4 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 5px #666;
+  transition: all 0.2s linear;
+}
+.button:hover,
+.button2:hover,
+.button3:hover,
+.button4:hover {
+  transition: all 0.2s linear;
+  outline: 1px solid red;
+  box-shadow: 0 0 5px red;
+  transform: scale(1.05);
+}
+.button,
+.button3 {
+  font-size: 1.5em;
+  padding: 0.8em 2.2em;
+  border-radius: 2em;
+}
+.button2,
+.button4 {
+  font-size: 1.3em;
+  padding: 0.8em 1.8em;
+  border-radius: 2em;
+}
+.primary,
+.primary2 {
+  background: linear-gradient(
+    315deg,
+    rgba(93, 92, 229, 1) 30%,
+    rgba(128, 130, 235, 1) 33%,
+    rgba(121, 128, 234, 1) 100%
+  );
+}
+.secondary,
+.secondary2 {
+  background: linear-gradient(
+    315deg,
+    rgba(142, 147, 151, 1) 30%,
+    rgba(177, 182, 186, 1) 33%,
+    rgba(165, 168, 177, 1) 100%
+  );
+}
+.success,
+.success2 {
+  background: linear-gradient(
+    315deg,
+    rgba(6, 192, 74, 1) 30%,
+    rgba(33, 218, 111, 1) 33%,
+    rgba(27, 209, 106, 1) 100%
+  );
+}
+.danger,
+.danger2 {
+  background: linear-gradient(
+    315deg,
+    rgba(242, 38, 13, 1) 30%,
+    rgba(244, 78, 76, 1) 33%,
+    rgba(241, 67, 69, 1) 100%
+  );
+}
+.warning,
+.warning2 {
+  background: linear-gradient(
+    315deg,
+    rgba(255, 182, 11, 1) 30%,
+    rgba(255, 205, 67, 1) 33%,
+    rgba(248, 200, 54, 1) 100%
+  );
+}
+.info,
+.info2 {
+  background: linear-gradient(
+    315deg,
+    rgba(1, 180, 208, 1) 30%,
+    rgba(41, 218, 247, 1) 33%,
+    rgba(34, 209, 236, 1) 100%
+  );
+}
+.light,
+.light2 {
+  background: linear-gradient(
+    315deg,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(220, 220, 218, 1) 33%,
+    rgba(225, 225, 225, 1) 100%
+  );
+}
+.dark,
+.dark2 {
+  background: linear-gradient(
+    315deg,
+    rgba(70, 75, 81, 1) 30%,
+    rgba(101, 114, 128, 1) 33%,
+    rgba(90, 104, 117, 1) 100%
+  );
+}
+.link,
+.link2 {
+  background: rgba(255, 255, 255, 1);
+}
+.primary3,
+.primary4 {
+  outline: 1px solid lightskyblue;
+  color: lightskyblue;
+}
+.primary3:hover,
+.primary4:hover {
+  color: #fff;
+  background-color: lightskyblue;
+  outline: 1px solid lightskyblue;
+  box-shadow: 0 0 5px lightskyblue;
+}
+.secondary3,
+.secondary4 {
+  outline: 1px solid grey;
+  color: grey;
+}
+.secondary3:hover,
+.secondary4:hover {
+  color: #fff;
+  background-color: grey;
+  outline: 1px solid grey;
+  box-shadow: 0 0 5px grey;
+}
+.success3,
+.success4 {
+  outline: 1px solid green;
+  color: green;
+}
+.success3:hover,
+.success4:hover {
+  color: #fff;
+  background-color: green;
+  outline: 1px solid green;
+  box-shadow: 0 0 5px green;
+}
+.danger3,
+.danger4 {
+  outline: 1px solid tomato;
+  color: tomato;
+}
+.danger3:hover,
+.danger4:hover {
+  color: #fff;
+  background-color: tomato;
+  outline: 1px solid tomato;
+  box-shadow: 0 0 5px tomato;
+}
+.warning3,
+.warning4 {
+  outline: 1px solid yellow;
+  color: yellow;
+}
+.warning3:hover,
+.warning4:hover {
+  color: #fff;
+  background-color: yellow;
+  outline: 1px solid yellow;
+  box-shadow: 0 0 5px yellow;
+}
+.info3,
+.info4 {
+  outline: 1px solid lightblue;
+  color: lightblue;
+}
+.info3:hover,
+.info4:hover {
+  color: #fff;
+  background-color: lightblue;
+  outline: 1px solid lightblue;
+  box-shadow: 0 0 5px lightblue;
+}
+.light3,
+.light4 {
+  outline: 1px solid lightgrey;
+  color: lightgrey;
+}
+.light3:hover,
+.light4:hover {
+  color: #fff;
+  background-color: lightgrey;
+  outline: 1px solid lightgrey;
+  box-shadow: 0 0 5px lightgrey;
+}
+.dark3,
+.dark4 {
+  outline: 1px solid black;
+  color: black;
+}
+.dark3:hover,
+.dark4:hover {
+  color: #fff;
+  background-color: black;
+  outline: 1px solid black;
+  box-shadow: 0 0 5px black;
+}
+
+/* 1400px, 1200px, 992px, 768px, 576px, 320px */
+
+@media only screen and (max-width: 1400px) {
+  .container {
+    width: 100%;
+  }
+  .buttons {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .buttons {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  .buttons {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+  }
+  .buttons {
+    width: 80%;
+  }
+}
